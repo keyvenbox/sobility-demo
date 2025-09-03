@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "msg",
+						"type": "string"
+					}
+				],
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "bar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "foo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/DiamondInheritance.sol": "Pepole"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"tests/DiamondInheritance.sol": {
+			"keccak256": "0x332e5d21e667ec4275b5f8415ddc621f581f8499adcad6cf53e5a3d19a92ab3c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://92661ee37c33f947f81b382bc036e0de7f6099d1ac7e7e1e9e570fd7b70ad34b",
+				"dweb:/ipfs/QmWnoQfpXbgBJCFU8RSMwv75wjohWwKRCddJQdMNW2nfCs"
+			]
+		}
+	},
+	"version": 1
+}

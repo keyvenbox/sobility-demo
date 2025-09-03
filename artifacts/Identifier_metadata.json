@@ -1,0 +1,94 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_divedend",
+						"type": "uint256"
+					}
+				],
+				"name": "getExactDividedBy2And3",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_dividend",
+						"type": "uint256"
+					}
+				],
+				"name": "getExactDividedBy2And3WithoutModifier",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/InheritanceTest.sol": "Identifier"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"tests/InheritanceTest.sol": {
+			"keccak256": "0x8fae20a738e40841fa664c840171062b7a29e7432f68fb366bff83e3a6fbca59",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aeab1c354d53789b59c8aee18b3506ce5317c5f55d5d08c477435ffdbbf57c90",
+				"dweb:/ipfs/QmWW4U9eZEMYuTFss1SyHi56S7EAdbZquqR1C2jTePesFh"
+			]
+		}
+	},
+	"version": 1
+}
