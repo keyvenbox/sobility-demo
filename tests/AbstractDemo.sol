@@ -8,6 +8,7 @@ abstract contract Base {
 
 contract BaseImpl is Base {
 
+
     function getAlias() public pure override returns (string memory) {
         return "BaseImpl";
     }

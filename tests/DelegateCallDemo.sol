@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.21;
+
+// 调用结构：你（A）通过合约B调用目标合约C。
+
+// 被调用的合约C
+contract C {
+    uint public num;
+    address public sender;
+
+    function setVars(uint _num) public payable {
+        num = _num;
+        sender = msg.sender;
+    }
+}
+
+// 发起调用的合约B
+contract B {
+    uint public num;
+    address public sender;
+
+    // 通过call来调用C的setVars()函数，将改变合约C里的状态变量
+    function callSetVars(address _addr, uint _num) external payable{
+        // call setVars()
+        (bool success, bytes memory data) = _addr.call(
+            abi.encodeWithSignature("setVars(uint256)", _num)
+        );
+    }
+
+}
+
+
