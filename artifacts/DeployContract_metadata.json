@@ -1,0 +1,107 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract DeleteContract",
+						"name": "del",
+						"type": "address"
+					}
+				],
+				"name": "deleteContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "demo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "addr",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "value",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct DeployContract.DemoResult",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/DeleteContractDemo.sol": "DeployContract"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"tests/DeleteContractDemo.sol": {
+			"keccak256": "0x8215284fa7210dd1bcbaf3530fcb028fa2080b80c91d5a725697373ec0570b8a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5926ca54c82c7ce05667771654e03d56b76d6eb6b52fca6e1e24bc422bd6d266",
+				"dweb:/ipfs/QmRVdiDxAKbZHWkeXoSRt3AJtoxbkGEUsomm5TAdNEtn96"
+			]
+		}
+	},
+	"version": 1
+}

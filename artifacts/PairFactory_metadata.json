@@ -8,55 +8,60 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
-					}
-				],
-				"name": "callSetVars",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
-					}
-				],
-				"name": "delegatecallSetVars",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "num",
-				"outputs": [
-					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"name": "allPairs",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "sender",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenB",
+						"type": "address"
+					}
+				],
+				"name": "createPair",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "pairAddr",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "getPair",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -81,7 +86,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"tests/DelegateCallDemo.sol": "B"
+			"tests/CreateDemo.sol": "PairFactory"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -95,12 +100,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"tests/DelegateCallDemo.sol": {
-			"keccak256": "0x6b19261c07f0a86f08cb1dfa7315a2f1144b16439d6b9e56d3f7b95804835964",
+		"tests/CreateDemo.sol": {
+			"keccak256": "0xced7f1be5f116b48369a1a61894068f9299b7320f960a92968c69d841d5cfd25",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://59ac0ba0ab20e78a31cd4b2092eb4772264b68a0bdce9f79cd77f84d2e8ef740",
-				"dweb:/ipfs/QmRPxjixwRJ5oyMzUAGwdEx4Y3rjHfXJgUH9uSYCkGqfPf"
+				"bzz-raw://3c41512f863cc354937bbea874a2660115d7a8a12e68aefcf9e2543d703aee6f",
+				"dweb:/ipfs/QmcDCt4xD9EHPmvnEz62cexsHuUW696tf47waBeeih9nZ1"
 			]
 		}
 	},

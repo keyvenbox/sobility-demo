@@ -27,6 +27,12 @@ contract B {
         );
     }
 
+    // 通过delegatecall来调用C的setVars()函数，将改变合约B里的状态变量
+    function delegatecallSetVars(address _addr, uint _num) external payable {
+        // delefatecall setVars()
+        (bool success, bytes memory data) = _addr.delegatecall(
+            abi.encodeWithSignature("setVars(uint256)", _num)
+        );
+    }
+
 }
-
-

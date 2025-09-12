@@ -6,49 +6,49 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [
 					{
 						"internalType": "address",
-						"name": "_addr",
+						"name": "",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
 					}
 				],
-				"name": "callSetVars",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_addr",
+						"name": "_token0",
 						"type": "address"
 					},
 					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_token1",
+						"type": "address"
 					}
 				],
-				"name": "delegatecallSetVars",
+				"name": "initialize",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "num",
+				"name": "token0",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -56,7 +56,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "sender",
+				"name": "token1",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -81,7 +81,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"tests/DelegateCallDemo.sol": "B"
+			"tests/Create2Demo.sol": "Pair"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -95,12 +95,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"tests/DelegateCallDemo.sol": {
-			"keccak256": "0x6b19261c07f0a86f08cb1dfa7315a2f1144b16439d6b9e56d3f7b95804835964",
+		"tests/Create2Demo.sol": {
+			"keccak256": "0xfece01cda2f7a307147f4f77514b475cfb917ee848df6141daaa25a4ea3a3d75",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://59ac0ba0ab20e78a31cd4b2092eb4772264b68a0bdce9f79cd77f84d2e8ef740",
-				"dweb:/ipfs/QmRPxjixwRJ5oyMzUAGwdEx4Y3rjHfXJgUH9uSYCkGqfPf"
+				"bzz-raw://083ec6c3114bf1cb223e5c44ca7f8144bb322858433b1e4b394d5b1bf60ef363",
+				"dweb:/ipfs/QmWgxJbmKb5iGxZiy82LJUaDNwXtic6qtBVSxFBnqSjMYx"
 			]
 		}
 	},

@@ -7,11 +7,23 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "num",
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "deleteContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "balance",
 						"type": "uint256"
 					}
 				],
@@ -20,29 +32,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "sender",
+				"name": "value",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
-					}
-				],
-				"name": "setVars",
-				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -58,7 +61,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"tests/DelegateCallDemo.sol": "C"
+			"tests/DeleteContractDemo.sol": "DeleteContract"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -72,12 +75,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"tests/DelegateCallDemo.sol": {
-			"keccak256": "0x6b19261c07f0a86f08cb1dfa7315a2f1144b16439d6b9e56d3f7b95804835964",
+		"tests/DeleteContractDemo.sol": {
+			"keccak256": "0x8215284fa7210dd1bcbaf3530fcb028fa2080b80c91d5a725697373ec0570b8a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://59ac0ba0ab20e78a31cd4b2092eb4772264b68a0bdce9f79cd77f84d2e8ef740",
-				"dweb:/ipfs/QmRPxjixwRJ5oyMzUAGwdEx4Y3rjHfXJgUH9uSYCkGqfPf"
+				"bzz-raw://5926ca54c82c7ce05667771654e03d56b76d6eb6b52fca6e1e24bc422bd6d266",
+				"dweb:/ipfs/QmRVdiDxAKbZHWkeXoSRt3AJtoxbkGEUsomm5TAdNEtn96"
 			]
 		}
 	},
