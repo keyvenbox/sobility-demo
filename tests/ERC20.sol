@@ -44,6 +44,11 @@ contract ERC20 is IERC20 {
         函数	        调用者	    关键参数	影响的存储
         approve	        代币拥有者	spender	    allowance[msg.sender][spender]
         transferFrom	被授权者	from	    allowance[from][msg.sender]
+
+        
+        记住这个对应关系：
+        approve 的 msg.sender = transferFrom 的 from
+        approve 的 spender = transferFrom 的 msg.sender
      */
     function approve(address spender, uint256 amount) external override returns(bool) {
         allowance[msg.sender][spender] = amount;
@@ -68,6 +73,16 @@ contract ERC20 is IERC20 {
 
     /**
      * 铸造代币函数
+     {
+		"from": "0xEF899724384f40905401fC81f35B015D85DD3d7c",
+		"topic": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+		"event": "Transfer",
+		"args": {
+			"0": "0x0000000000000000000000000000000000000000", // 铸币地址
+			"1": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4", // 接收地址
+			"2": "100" // 代币数额
+		}
+	}
      */
     function mint(uint amount) external {
         balanceOf[msg.sender] += amount;
@@ -76,12 +91,14 @@ contract ERC20 is IERC20 {
     }
 
     /**
-     * 销毁函数   
+     * 销毁函数
      */
     function burn(uint amount) external {
         balanceOf[msg.sender] -= amount;
         totalSupply -= amount;
         emit Transfer(msg.sender, address(0), amount);
     }
+
+    
 
 }

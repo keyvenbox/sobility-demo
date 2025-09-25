@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_array",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferETH",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"multiTransferETH(address[],uint256[])": {
+					"notice": "Transfer ETH to multiple addresses"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/Airdrop.sol": "Airdrop"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"tests/Airdrop.sol": {
+			"keccak256": "0xd3f3b9dda96433ea5cbbbc675ab45fd79df2d1db59ff226a8d9cb3d83624fade",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f81bd45b3b72bd1d332b0a013b907807202130bd173347b3f3595b4b80819867",
+				"dweb:/ipfs/QmeWUJw42HYxPaVd8WoLEDAGVuZXqN94pGRyTbkGkcFuqx"
+			]
+		},
+		"tests/IERC20.sol": {
+			"keccak256": "0x6a4e921cb566cb906cce84901e5f534e6e419d29a8b3746cd66c2e5b840380b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e0d6c20688de78b333894830e9a9470a93a9941d7aab77e1a42bcf2fd0480547",
+				"dweb:/ipfs/QmQ96HNNaVg9uiJPJrDzZb9XwbRmsbdbXsdJet238tfFaD"
+			]
+		}
+	},
+	"version": 1
+}
